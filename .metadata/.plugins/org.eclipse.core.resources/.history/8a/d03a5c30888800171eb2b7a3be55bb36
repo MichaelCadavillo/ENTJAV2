@@ -1,0 +1,92 @@
+package controller;
+
+import java.io.IOException;
+import java.sql.Connection;
+import utility.InvalidDestinationException;
+import utility.InvalidNameException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import model.MRTBean;
+
+
+public class ComputeFareServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	Connection connection = null;
+	String jdbcUrl = null;
+	String dbUsername = null;
+	String dbPassword = null;
+	
+	public void init()throws ServletException{
+		connection = new MRTBean().getConnection();
+		getServletContext().setAttribute("dbconn", connection);
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String exceptionMessage = "";
+		int exceptionTrigger = 0;
+		
+		try{
+			String lastName = request.getParameter("lastName");
+			String firstName = request.getParameter("firstName");
+			String destination = request.getParameter("destination");
+			
+			if(lastName.isEmpty() || firstName.isEmpty()){
+				exceptionMessage += "Invalid Name!<br> Click the Go Back button below to try again!";
+				exceptionTrigger = 1;
+				throw new InvalidNameException(exceptionMessage);
+			}
+			
+			switch(destination){
+			case "1": case "2":
+			case "3": case "4":
+			case "5": case "6":
+			case "7": case "8":
+			case "9": case "10":
+			case "11": case "12":
+				break;
+			default:
+				exceptionMessage += "Invalid destination!<br> Click the Go Back button below to try again!";
+				exceptionTrigger = 1;
+				throw new InvalidDestinationException(exceptionMessage);
+			}
+			
+			MRTBean mrtbean = new MRTBean();
+			mrtbean.setLastName(lastName);
+			mrtbean.setFirstName(firstName);
+			mrtbean.setDestinationCode(Integer.parseInt(destination));
+			mrtbean.setDestinationNameProfitAndFare(getServletContext());
+			mrtbean.insertRecord(connection);
+			
+			request.getSession().setAttribute("mrtbean", mrtbean);
+			
+		}catch(InvalidDestinationException ide){
+			request.setAttribute("error", exceptionMessage);
+		}catch(InvalidNameException ine){
+			request.setAttribute("error", exceptionMessage);
+		}catch(NumberFormatException nfe){
+			exceptionMessage += "Invalid Fare Amount!<br> Please check your web.xml and Try Again!";
+			exceptionTrigger = 1;
+			request.setAttribute("error", exceptionMessage);
+		}catch(NullPointerException npe){
+			exceptionMessage += "Please Choose a Destination!<br> Click the Go Back button below to try again!";
+			exceptionTrigger = 1;
+			request.setAttribute("error", exceptionMessage);
+		}
+		
+		//request.getRequestDispatcher((exceptionTrigger == 0)
+			//	? "display.jsp":"error.jsp").forward(request, response);
+		if(exceptionTrigger==0){
+			response.sendRedirect("display.jsp");
+		}else{
+			request.getRequestDispatcher("error.jsp").forward(request, response);
+		}
+		
+	}
+
+}

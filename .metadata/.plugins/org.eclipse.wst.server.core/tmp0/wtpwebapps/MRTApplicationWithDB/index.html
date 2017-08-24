@@ -1,0 +1,232 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MRT Sales</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/layout.css">
+
+<!-- ICON -->
+<link rel="apple-touch-icon" sizes="57x57"
+	href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60"
+	href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72"
+	href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76"
+	href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114"
+	href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120"
+	href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144"
+	href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152"
+	href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"
+	href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96"
+	href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">MRT</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html#home">Home</a></li>
+					<li><a href="index.html#station">Stations</a></li>
+					<li><a href="records.html">Records</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="carousel fade-carousel slide" data-ride="carousel"
+		data-interval="4000" id="home">
+		<!-- Overlay -->
+		<div class="overlay"></div>
+
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#bs-carousel" data-slide-to="1"></li>
+			<li data-target="#bs-carousel" data-slide-to="2"></li>
+		</ol>
+
+		<!-- Wrapper for slides -->
+		<div class="carousel-inner">
+			<div class="item slides active">
+				<div class="slide-1"></div>
+				<div class="hero">
+					<hgroup>
+						<h2>Service Excellence</h2>
+						<img style="width: 50vw; border-radius: 5px" src="images/mrt1.jpg">
+					</hgroup>
+				</div>
+			</div>
+			<div class="item slides">
+				<div class="slide-2"></div>
+				<div class="hero">
+					<hgroup>
+						<h2>Community Development</h2>
+						<img style="width: 50vw; border-radius: 5px"
+							src="images/Capture.jpg">
+					</hgroup>
+				</div>
+			</div>
+			<div class="item slides">
+				<div class="slide-3"></div>
+				<div class="hero">
+					<hgroup>
+						<h2>Economic Stability</h2>
+						<img style="width: 50vw; border-radius: 5px" src="images/mrt2.jpg">
+					</hgroup>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="station" class="container-fluid text-center">
+
+
+		<fieldset>
+			<legend>
+				<img style="border-radius: 5px" src="images/Capture.jpg">
+			</legend>
+
+			<div class="container-fluid">
+
+
+				<form action="ComputeFare.html" method="post">
+
+					Last Name: <input type="text" class="form-control" id="lastName"
+						name="lastName" required placeholder="Dela Cruz "><br>
+					First Name: <input type="text" class="form-control" id="firstName"
+						name="firstName" required placeholder="Juan ">
+					<div>
+						<br> <select required id="destination" name="destination">
+
+							<option value="" selected="true" disabled="disabled">--Destination--</option>
+							<option value="1">Quezon Avenue</option>
+							<option value="2">GMA Kamuning</option>
+							<option value="3">Cubao</option>
+							<option value="4">Santolan</option>
+							<option value="5">Ortigas</option>
+							<option value="6">Shaw Boulevard</option>
+							<option value="7">Boni Avenue</option>
+							<option value="8">Guadalupe</option>
+							<option value="9">Buendia</option>
+							<option value="10">Ayala</option>
+							<option value="11">Magallanes</option>
+							<option value="12">Taft Avenue</option>
+						</select>
+					</div>
+					<br>
+
+
+					<button class="btn btn-default center" type="submit" name="submit">Submit</button>
+					<button class="btn btn-default center" type="reset" name="reset">Reset</button>
+				</form>
+			</div>
+	</div>
+
+	<div class="container-fluid text-center">
+		<div class="row text-center slideanim">
+			<iframe
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.066438624386!2d121.03014431427508!3d14.652169989769638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b6fd9e5c2fb1%3A0x5e2929a93cd93f2d!2sNorth+Avenue!5e0!3m2!1sen!2sph!4v1502339997932"
+				style="width: 60vw; height: 50vh;" frameborder="0" style="border:0"
+				allowfullscreen></iframe>
+		</div>
+
+	</div>
+
+	<div class="container-fluid text-center">
+		<img style="width: 60vw;" src="images/stations.jpg">
+	</div>
+
+	<hr>
+
+	<footer class="container-fluid text-center">
+		<a href="#home" title="To Top"> <span
+			class="glyphicon glyphicon-chevron-up"></span><br>
+		</a> <strong>MRT3</strong><br>
+		<div>
+			<p>
+				Powered by M&M<br> Michael Cadavillo & <br>Mark Ticzon
+			</p>
+			<p>&#169;2017 - MRT3, All Rights Reserved</p>
+		</div>
+
+
+	</footer>
+
+
+	<script>
+					$(document).ready(function(){
+					  // Add smooth scrolling to all links in navbar + footer link
+					  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+					    // Make sure this.hash has a value before overriding default behavior
+					    if (this.hash !== "") {
+					      // Prevent default anchor click behavior
+					      event.preventDefault();
+
+					      // Store hash
+					      var hash = this.hash;
+
+					      // Using jQuery's animate() method to add smooth page scroll
+					      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+					      $('html, body').animate({
+					        scrollTop: $(hash).offset().top
+					      }, 900, function(){
+
+					        // Add hash (#) to URL when done scrolling (default click behavior)
+					        window.location.hash = hash;
+					      });
+					    } // End if
+					  });
+
+					  $(window).scroll(function() {
+					    $(".slideanim").each(function(){
+					      var pos = $(this).offset().top;
+
+					      var winTop = $(window).scrollTop();
+					        if (pos < winTop + 600) {
+					          $(this).addClass("slide");
+					        }
+					    });
+					  });
+					})
+					</script>
+
+
+</body>
+</html>
