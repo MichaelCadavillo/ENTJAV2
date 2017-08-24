@@ -84,3 +84,7 @@
 0:0:0:0:0:0:0:1 - - [24/Aug/2017:12:49:18 +0800] "GET /mrtapplication/css/images/mrt1.jpg HTTP/1.1" 404 1019
 0:0:0:0:0:0:0:1 - - [24/Aug/2017:12:49:23 +0800] "GET /mrtapplication/css/images/mrt3.jpg HTTP/1.1" 404 1019
 0:0:0:0:0:0:0:1 - - [24/Aug/2017:12:49:27 +0800] "GET /mrtapplication/css/images/stations.jpg HTTP/1.1" 404 1027
+127.0.0.1 - - [24/Aug/2017:13:25:02 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [24/Aug/2017:13:25:04 +0800] "GET /mvc-jsp12-request-forex/ HTTP/1.1" 200 1146
+0:0:0:0:0:0:0:1 - - [24/Aug/2017:13:25:08 +0800] "POST /mvc-jsp12-request-forex/processcurrencyexchange.html HTTP/1.1" 200 873
+0:0:0:0:0:0:0:1 - - [24/Aug/2017:13:25:10 +0800] "GET /mvc-jsp12-request-forex/getAllRecords.html? HTTP/1.1" 200 1896
