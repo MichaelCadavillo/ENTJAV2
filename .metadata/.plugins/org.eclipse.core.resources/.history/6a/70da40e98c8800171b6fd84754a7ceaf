@@ -100,7 +100,7 @@ public class ForexBean implements SQLCommand {
 		if (connection != null) {
 			try {
 				//set auto-commit to false
-				connection.setAutoCommit(false);
+				
 				
 				PreparedStatement pstmnt = connection
 						.prepareStatement(INSERT_REC);
