@@ -1,0 +1,5 @@
+package payroll.action;
+
+public class ComputePayrollAction {
+
+}
