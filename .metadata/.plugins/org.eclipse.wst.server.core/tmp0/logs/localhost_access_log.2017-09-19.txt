@@ -49,3 +49,6 @@
 0:0:0:0:0:0:0:1 - - [19/Sep/2017:12:50:30 +0800] "GET /code15-Struts2-payroll-basic/ HTTP/1.1" 200 749
 0:0:0:0:0:0:0:1 - - [19/Sep/2017:12:50:54 +0800] "GET /code15-Struts2-payroll-basic/ HTTP/1.1" 200 802
 0:0:0:0:0:0:0:1 - - [19/Sep/2017:12:51:03 +0800] "GET /code15-Struts2-payroll-basic/ HTTP/1.1" 200 805
+127.0.0.1 - - [19/Sep/2017:13:56:02 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [19/Sep/2017:13:56:02 +0800] "GET /code15-Struts2-payroll-basic/ HTTP/1.1" 200 805
+0:0:0:0:0:0:0:1 - - [19/Sep/2017:13:56:12 +0800] "POST /code15-Struts2-payroll-basic/compute.action HTTP/1.1" 200 669
