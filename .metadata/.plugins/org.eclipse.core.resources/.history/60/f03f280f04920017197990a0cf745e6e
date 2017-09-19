@@ -1,0 +1,123 @@
+package payroll.action;
+
+public class ComputePayrollAction {
+	// input variable
+	private String name;
+	private int hoursWorked;
+	private double payRate;
+
+	// computed value
+	private double basicPay;
+	private double overtimePay;
+	private double grossPay;
+	private double taxDeduction;
+	private double netPay;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getHoursWorked() {
+		return hoursWorked;
+	}
+
+	public void setHoursWorked(int hoursWorked) {
+		this.hoursWorked = hoursWorked;
+	}
+
+	public double getPayRate() {
+		return payRate;
+	}
+
+	public void setPayRate(double payRate) {
+		this.payRate = payRate;
+	}
+
+	public double getBasicPay() {
+		return basicPay;
+	}
+
+	public void setBasicPay(double basicPay) {
+		this.basicPay = basicPay;
+	}
+
+	public double getOvertimePay() {
+		return overtimePay;
+	}
+
+	public void setOvertimePay(double overtimePay) {
+		this.overtimePay = overtimePay;
+	}
+
+	public double getGrossPay() {
+		return grossPay;
+	}
+
+	public void setGrossPay(double grossPay) {
+		this.grossPay = grossPay;
+	}
+
+	public double getTaxDeduction() {
+		return taxDeduction;
+	}
+
+	public void setTaxDeduction(double taxDeduction) {
+		this.taxDeduction = taxDeduction;
+	}
+
+	public double getNetPay() {
+		return netPay;
+	}
+
+	public void setNetPay(double netPay) {
+		this.netPay = netPay;
+	}
+
+	public String execute() {
+		setName("Dirk Nowitzki");
+		setHoursWorked(50);
+		setPayRate(750);
+		
+		if(hoursWorked < 0){
+			return "error";
+		}else{
+			computeBasicPay();
+			computeOvertimePay();
+			computeGrossPay();
+			computeTaxDeduction();
+			computeNetPay();
+			
+			System.out.println("Name: " + getName());
+			System.out.println("Hours Worked: " + get);
+			return "success";
+		}
+	}
+	
+	private void computeBasicPay(){
+		this.basicPay = (hoursWorked > 40)
+				? 40 * payRate
+				: hoursWorked * payRate;
+	}
+	
+	private void computeOvertimePay(){
+		this.overtimePay = (hoursWorked > 40)
+				? (hoursWorked - 40) * payRate * 1.5 
+				: 0;
+	}
+	
+	private void computeGrossPay(){
+		this.grossPay = getBasicPay() + getOvertimePay();
+	}
+	
+	private void computeTaxDeduction(){
+		this.taxDeduction = this.grossPay * 0.12;
+	}
+	
+	private void computeNetPay(){
+		this.netPay = this.grossPay - this.taxDeduction;
+	}
+}
