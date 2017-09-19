@@ -9,6 +9,18 @@
 </head>
 <body>
 	<h2>Struts 2 Payroll Web Application</h2>
+	<p>Employee Name: <b>${name}</b></p>
+	<p>Hours Worked: <b>${hoursWorked}</b></p>
+	<p>Rate per Hour: <b>${payRate}</b></p>
+	<p>Basic Pay: <b>${basicPay}</b></p>
+	<p>Overtime Pay: <b>${overtimePay}</b></p>
+	<p>Gross Pay: <b>${grossPay}</b></p>
+	<p>Withholding Tax: <b>${taxDeduction}</b></p>
+	<p>NET PAY: <b>${netPay}</b></p>
+	
+	<hr>
+	
+	<h2>Struts 2 Payroll Web Application</h2>
 	<p>Employee Name: <b><s:property value="name"/></b></p>
 	<p>Hours Worked: <b><s:property value="hoursWorked"/></b></p>
 	<p>Rate per Hour: <b><s:property value="payRate"/></b></p>
