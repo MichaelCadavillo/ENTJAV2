@@ -2,10 +2,10 @@
 <launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
 <stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
 <stringAttribute key="launchable-adapter-id" value="org.eclipse.jst.server.tomcat.web"/>
-<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:code22-Struts2-payroll-JavaBean//"/>
+<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:code23-Struts2-payroll-ModelDriven//"/>
 <stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/code22-Struts2-payroll-JavaBean"/>
+<listEntry value="/code23-Struts2-payroll-ModelDriven"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>
