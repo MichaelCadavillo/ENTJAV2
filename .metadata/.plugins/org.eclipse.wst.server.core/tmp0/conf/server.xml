@@ -126,7 +126,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log." suffix=".txt"/>
 
-      <Context docBase="Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code19-Struts2-payroll-TagLibrary" path="/code15-Struts2-payroll-basic" reloadable="true" source="org.eclipse.jst.jee.server:code19-Struts2-payroll-TagLibrary"/></Host>
+      <Context docBase="Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code22-Struts2-payroll-JavaBean" path="/code15-Struts2-payroll-basic" reloadable="true" source="org.eclipse.jst.jee.server:code22-Struts2-payroll-JavaBean"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -1,7 +1,0 @@
-package payroll.action;
-
-public class ComputePayrollAction {
-	public String execute(){
-		return "success"
-	}
-}

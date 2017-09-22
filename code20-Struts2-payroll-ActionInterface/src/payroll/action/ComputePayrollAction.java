@@ -1,6 +1,8 @@
 package payroll.action;
 
-public class ComputePayrollAction {
+import com.opensymphony.xwork2.ActionSupport;
+
+public class ComputePayrollAction extends ActionSupport{
 	// input variable
 	private String name;
 	private int hoursWorked;
@@ -86,7 +88,7 @@ public class ComputePayrollAction {
 	}
 
 	public String execute() {
-		String status = "error";
+		String status = ERROR;
 		
 		if(getHoursWorked() > 0 || getPayRate() > 0 || getName().trim().length() > 0){
 			facade();
@@ -99,7 +101,7 @@ public class ComputePayrollAction {
 			System.out.println("Gross Pay: Php" + getGrossPay());
 			System.out.println("Withholding Tax: Php" + getTaxDeduction());
 			System.out.println("Net Pay: Php" + getNetPay());*/
-			status = "success";
+			status = SUCCESS;
 		}
 		
 		return status;
@@ -127,5 +129,21 @@ public class ComputePayrollAction {
 	
 	private void computeNetPay(){
 		this.netPay = this.grossPay - this.taxDeduction;
+	}
+	
+	@Override
+	public void validate(){
+		if(getHoursWorked() > 0){
+			
+		}
+		
+		if(getPayRate() > 0){
+			
+		}
+		
+		if(getName().trim().length() > 0){
+			
+		}
+		
 	}
 }
