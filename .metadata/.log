@@ -1492,3 +1492,6 @@ java.lang.OutOfMemoryError: Requested array size exceeds VM limit
 !MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code20-Struts2-payroll-ActionInterface\WEB-INF\lib\struts2-core-2.3.12.jar. May be locked by another process.
 !SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-22 19:02:05.937
 !MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code20-Struts2-payroll-ActionInterface\WEB-INF\lib\xwork-core-2.3.12.jar. May be locked by another process.
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-09-22 20:27:06.368
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code23-Struts2-payroll-ModelDriven\WEB-INF\lib\struts2-core-2.3.12.jar. May be locked by another process.
