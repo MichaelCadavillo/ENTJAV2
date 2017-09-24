@@ -92,7 +92,8 @@ public class ComputePayrollAction {
 			computeNetPay();
 			
 			System.out.println("Name: " + getName());
-			System.out.println("Hours Worked: " + get);
+			System.out.println("Hours Worked: " + getHoursWorked());
+			System.out.println("Pay Rate: " + getPayRate());
 			return "success";
 		}
 	}
