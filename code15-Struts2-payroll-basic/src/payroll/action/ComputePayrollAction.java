@@ -76,26 +76,36 @@ public class ComputePayrollAction {
 	public void setNetPay(double netPay) {
 		this.netPay = netPay;
 	}
+	
+	public void facade(){
+		computeBasicPay();
+		computeOvertimePay();
+		computeGrossPay();
+		computeTaxDeduction();
+		computeNetPay();
+	}
 
 	public String execute() {
 		setName("Dirk Nowitzki");
 		setHoursWorked(50);
 		setPayRate(750);
+		String status = "error";
 		
-		if(hoursWorked < 0){
-			return "error";
-		}else{
-			computeBasicPay();
-			computeOvertimePay();
-			computeGrossPay();
-			computeTaxDeduction();
-			computeNetPay();
+		if(getHoursWorked() > 0 || getPayRate() > 0 || getName().trim().length() > 0){
+			facade();
 			
 			System.out.println("Name: " + getName());
 			System.out.println("Hours Worked: " + getHoursWorked());
-			System.out.println("Pay Rate: " + getPayRate());
-			return "success";
+			System.out.println("Payrate: Php" + getPayRate());
+			System.out.println("Basic Pay: Php" + getBasicPay());
+			System.out.println("Overtime Pay: Php" + getOvertimePay());
+			System.out.println("Gross Pay: Php" + getGrossPay());
+			System.out.println("Withholding Tax: Php" + getTaxDeduction());
+			System.out.println("Net Pay: Php" + getNetPay());
+			status = "success";
 		}
+		
+		return status;
 	}
 	
 	private void computeBasicPay(){
@@ -115,7 +125,7 @@ public class ComputePayrollAction {
 	}
 	
 	private void computeTaxDeduction(){
-		this.taxDeduction = this.grossPay * 0.12;
+		this.taxDeduction = this.grossPay * 0.10;
 	}
 	
 	private void computeNetPay(){

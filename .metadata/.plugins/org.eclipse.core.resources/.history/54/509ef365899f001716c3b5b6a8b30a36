@@ -1,0 +1,31 @@
+package payroll.action;
+
+import com.opensymphony.xwork2.ActionSupport;
+import payroll.model.PayrollBean;
+
+public class ComputePayrollAction extends ActionSupport{
+	
+	PayrollBean payroll = new PayrollBean();
+	
+	public String execute() {
+		payroll.facade();
+		
+		return SUCCESS;
+	}
+	
+	@Override
+	public void validate(){
+		if(payroll.getHoursWorked() <= 0){
+			addFieldError("hoursWorked", "Invalid Hours.");
+		}
+		
+		if(payroll.getPayRate() <= 0){
+			addFieldError("payRate", "Invalid PayRate.");
+		}
+		
+		if(payroll.getName().trim().length() == 0){
+			addFieldError("name", "Please Input a name.");
+		}
+		
+	}
+}
