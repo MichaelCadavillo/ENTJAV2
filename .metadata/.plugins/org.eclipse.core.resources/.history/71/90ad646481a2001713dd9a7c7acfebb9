@@ -10,7 +10,6 @@ public class PayrollBean {
 	private int id;
 
 	// input variable
-	@Column(name="EmpName", length=250, nullable=false)
 	private String name;
 	private int hoursWorked;
 	private double payRate;
