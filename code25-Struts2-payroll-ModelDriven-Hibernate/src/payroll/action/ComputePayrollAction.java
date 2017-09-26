@@ -28,7 +28,6 @@ public class ComputePayrollAction extends ActionSupport implements ModelDriven<P
 		
 		
 		//hibernate operations
-		
 		SessionFactory sessionFactory = 
 				new Configuration().configure().buildSessionFactory();
 			

@@ -1786,3 +1786,47 @@ Binding(CTRL+SHIFT+ARROW_DOWN,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.wst.sse.ui.structuredTextEditorScope,,,system)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-09-26 14:18:45.127
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\code25-Struts2-payroll-ModelDriven-Hibernate\WEB-INF\lib\struts2-core-2.3.12.jar. May be locked by another process.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\antlr-2.7.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-collections-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-fileupload-1.2.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-io-2.0.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-lang3-3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-logging-1.1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\commons-logging-api-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\dom4j-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\freemarker-2.3.19.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.1.Final.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\hibernate3.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\javassist-3.11.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\javassist-3.12.0.GA.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\jta-1.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\mysql-connector-java-5.1.36-bin.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\ognl-3.0.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.927
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\slf4j-api-1.6.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.928
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\struts2-core-2.3.12.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2017-09-26 14:26:12.928
+!MESSAGE Could not delete Y:\workspace1\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\exercise-struts2-TakeHomePay-Hibernate\WEB-INF\lib\xwork-core-2.3.12.jar. May be locked by another process.

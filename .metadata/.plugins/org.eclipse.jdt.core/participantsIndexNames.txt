@@ -65,6 +65,8 @@ Y:\tempworkspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\332178851
 \MRTApplicationWithDB\src
 Y:\workspace1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1829461352.index
 \code11-MVC-JSP1.2-request-forex-JDBC-DriverManagerv2-ResultSet-ServletContext\src
+Y:\workspace1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\101648558.index
+\exercise-struts2-TakeHomePay-Hibernate\src
 Y:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3212989798.index
 \code04-MVC-JSP2.0-request-forex\src
 Y:\workspace1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\683599112.index
