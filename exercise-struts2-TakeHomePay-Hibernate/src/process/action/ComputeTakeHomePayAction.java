@@ -42,7 +42,7 @@ public class ComputeTakeHomePayAction extends ActionSupport implements ModelDriv
 	
 	@Override
 	public void validate(){
-		if(emp.getName().isEmpty()){
+		if(emp.getName().trim().isEmpty()){
 			addFieldError("name", "Please input a name!");
 		}
 		

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\201501059\Desktop\Cadavillo-SE21" key="org.eclipse.jdt.ui.lastextjar"/>
+	<item value="Y:\hibernate configuration files\hibernate-distribution-3.6.10.Final\lib\bytecode\javassist" key="org.eclipse.jdt.ui.lastextjar"/>
 	<section name="SourceActionDialog.methods">
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="false" key="Comments"/>

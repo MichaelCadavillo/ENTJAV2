@@ -24,7 +24,7 @@ public class ProcessComputeTakeHomePayServlet extends HttpServlet {
 		int exceptionTrigger = 0;
 		
 		try{
-		String name = request.getParameter("name");
+		String name = request.getParameter("name").trim();
 		String code = request.getParameter("code").toUpperCase();
 		double sales = Double.parseDouble(request.getParameter("sales"));
 

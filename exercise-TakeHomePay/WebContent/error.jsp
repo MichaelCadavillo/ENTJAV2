@@ -1,16 +1,20 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<jsp:useBean id="error" type="java.lang.String" scope="application"/>
+<%@ page isErrorPage="true" %>
+
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Take Home Pay</title>
+<title>Error Page</title>
 </head>
-<body>
-	<h1 style="color: #ff0000"><%= error %></h1>
-	
-	<a href="index.jsp"><button> **GO BACK** </button></a> 
+<body style="background-color: #233040; color: white; text-align:center;">
+<img src= "https://multimedia.cx/eggs/wp-content/uploads/2010/03/snap-en.png"/>
 
+	<h2>
+		<font>Oops. Something went wrong :/</font> <br>Please
+		check your input
+	</h2>
+	<p>Please click the button below to try again</p>
+	<form action="index.jsp">
+		<p>
+			<input type='submit' value='<< GO BACK'>
+	</form>
 </body>
 </html>
